@@ -1,0 +1,56 @@
+URL:http://localhost:3000
+view = def index():
+Template = homepage.html
+    references to CSS in homepage -->   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/homepage.css">
+
+    URL:http://localhost:3000/melons
+    view: def list_melons():
+    Template = all_melons.html
+        refernces to CSS --> inheritance from base.html
+        variable names in template: melons_list
+        jinja control structures: for melon in melon jinja loop
+        template inheritance: inheritance from base.html
+        static files: stylesheet in base.html
+        message flashing: show flashed messages(inheritance)
+
+        URL:http://localhost:3000/melon/cren
+        view: def show_melon(melon_id):
+        Template = melon_details.html
+            refernces to CSS --> inheritance from base.html
+            variable names in template: display_melon
+            jinja control structures: if/else statement for melon seeds in jinja
+            template inheritance: inheritance from base.html
+            static files: stylesheet in base.html
+            message flashing: show flashed messages(inheritance), flash warning this melon has seeds
+                
+                URL:http://localhost:3000/add_to_cart/meli
+                view: def add_to_cart(melon_id):
+                Template = 
+                refernces to CSS --> 
+                variable names in template: 
+                jinja control structures: 
+                template inheritance: 
+                static files: 
+                message flashing: 
+
+                    URL: http://localhost:3000/cart
+                    view: def show_shopping_cart():
+                    Template = 
+                    refernces to CSS --> 
+                    variable names in template: 
+                    jinja control structures: 
+                    template inheritance: 
+                    static files: 
+                    message flashing: 
+
+                    URL: http://localhost:3000/checkout
+                    view: def checkout():
+
+    URL: http://localhost:3000/login
+    view: def show_login():
+
+        URL:http://localhost:3000/login
+        view: def process_login():
